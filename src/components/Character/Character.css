@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap%27");
+.characterdetail {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+}
+.characterdetail__nav {
+  display: flex;
+  background-color: #0c0c0c;
+  justify-content: space-around;
+}
+.characterdetail__nav img {
+  width: 70px;
+}
+.characterdetail__nav--text {
+  color: white;
+  font-family: "Sterilict";
+}
+.characterdetail__nav--back {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+.characterdetail__nav--back img {
+  opacity: 1;
+  transition: 0.4s;
+}
+.characterdetail__nav--back img:hover {
+  opacity: 0.5;
+}
+.characterdetail__nav--back span {
+  font-size: large;
+}
+.characterdetail__nav--to {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  transition: 0.4s;
+}
+.characterdetail__nav--to img {
+  width: 100%;
+  opacity: 1;
+}
+.characterdetail__nav--to:hover {
+  opacity: 0.5;
+}
+
+.detailcontainer {
+  background-color: #0c0c0c;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+.detailcontainer__img {
+  max-width: 65vw;
+  max-height: 50vh;
+}
+.detailcontainer__img img {
+  width: 100%;
+  height: 100%;
+}
+.detailcontainer__context {
+  color: white;
+  text-align: center;
+  font-family: "Sterilict";
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.detailcontainer__context--scrll {
+  width: 60%;
+  height: 170px;
+  overflow-y: scroll;
+  padding: 0% 3%;
+  text-align: justify;
+}
+.detailcontainer__context--P {
+  width: 600px;
+}
+.detailcontainer__context--P p {
+  font-family: "Changa", sans-serif;
+  font-size: 21px;
+}
+
+.detailcontainer__context--scrll::-webkit-scrollbar {
+  width: 2px;
+  height: 3px;
+  background-color: rgb(107, 106, 106);
+}
+
+.detailcontainer__context--scrll::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5px;
+}/*# sourceMappingURL=Character.css.map */

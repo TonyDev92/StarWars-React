@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  height: 80vh;
+  width: 90vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: transparent;
+  overflow-y: scroll;
+}
+.container_char {
+  width: 300px;
+  height: 300px;
+  margin: 18px 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.container_char-img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.container_char-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container_char-name {
+  width: 100%;
+  height: 80px;
+  color: white;
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.311);
+  font-family: "Sterilict";
+  text-align: center;
+  line-height: 60px;
+}
+.container_char:hover {
+  box-shadow: -2px -1px 15px 6px rgb(178, 173, 173);
+}
+.container_char:hover .container_char-name {
+  top: 90%;
+}
+
+.container::-webkit-scrollbar {
+  width: 4px;
+  height: 12px;
+  background-color: rgb(107, 106, 106);
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5px;
+}/*# sourceMappingURL=Gallery.css.map */

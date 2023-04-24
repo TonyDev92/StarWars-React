@@ -1,0 +1,38 @@
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+  width: 50%;
+}
+.timeline-item-content {
+  width: 55%;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 3px solid white;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  color: white;
+}
+.timeline-item-content .tag {
+  width: 90px;
+  height: 90px;
+}
+.timeline-item-content .tag img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 2px;
+}
+.timeline-item-content p {
+  font-family: "Sterilict", sans-serif;
+}
+
+.timeline-item:nth-child(odd) {
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding-right: 0px;
+}/*# sourceMappingURL=CronologyItem.css.map */

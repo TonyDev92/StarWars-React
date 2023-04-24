@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap%27");
+
+.characterdetail {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+
+  &__nav {
+    display: flex;
+    background-color: #0c0c0c;
+    justify-content: space-around;
+
+    img {
+      width: 70px;
+    }
+
+    &--text {
+      color: white;
+      font-family: "Sterilict";
+    }
+
+    &--back {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      width: 70%;
+
+      img {
+        opacity: 1;
+        transition: 0.4s;
+      }
+
+      img:hover {
+        opacity: 0.5;
+      }
+
+      span {
+        font-size: large;
+      }
+      
+    }
+
+    &--to {
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 15px;
+      transition: 0.4s;
+
+      img {
+        width: 100%;
+        opacity: 1;
+      }     
+    }
+
+    &--to:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.detailcontainer {
+  background-color: #0c0c0c;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+
+  &__img {
+    max-width: 65vw;
+    max-height: 50vh;
+    
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__context {
+    color: white;
+    text-align: center;
+    font-family: "Sterilict";
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &--scrll {
+      width: 60%;
+      height: 170px;
+      overflow-y: scroll;
+      padding: 0% 3%;
+      text-align: justify;
+    }
+    &--P {
+        width: 600px;
+        p { 
+          font-family: "Changa", sans-serif;
+          font-size: 21px;
+        }
+      }
+  }
+}
+
+.detailcontainer__context--scrll::-webkit-scrollbar {
+  width: 2px;
+  height: 3px;
+  background-color: rgb(107, 106, 106);
+}
+
+.detailcontainer__context--scrll::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5px;
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap');
+
+.container-characters {
+    max-width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url('../../assets/stars-back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.searcher {
+    height: 50px;
+    background-color: #0C0C0C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+
+    &_input {
+        position: relative; 
+        display: flex;
+        align-items: center;
+
+        .input-lupa {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 3%;
+            left: 10px;
+        }
+
+        &-inp {
+            font-family: 'Changa', sans-serif;
+            width: 250px;
+            background-color: transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid white;
+            padding: 5px 10px;
+            padding-left: 39px;
+            color: white;
+            
+        }
+    }
+
+    &_icon {
+        width: 300px;
+        height: 40px;
+        display: flex;
+        justify-content: space-evenly;
+
+        img{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .flags {
+            width: 50px;
+            cursor: pointer;
+        }
+    }
+}
+
+.gallery-container {
+    height: 92.8%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.searcher_input-inp:focus {
+    outline: none;
+}
+
+.searcher_icon{
+    img {
+        opacity: 1;
+        transition: 0.8s;
+    }
+}
+
+.searcher_icon img:hover, .searcher_icon .flags:hover {
+        opacity: 0.5;
+}

@@ -1,0 +1,36 @@
+.nav {
+  position: relative;
+  max-height: 40px;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+  padding-left: 0;
+}
+.nav__link {
+  position: relative;
+  text-decoration: none;
+  color: #a0a0a0;
+  font-family: "Sterilict";
+  font-size: 25px;
+  transition: 0.8s;
+  transition: 0.4s;
+}
+.nav__link:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.4s;
+}
+.nav__link:hover:after {
+  width: 100%;
+}
+.nav__link:hover {
+  color: white;
+}/*# sourceMappingURL=Menu.css.map */
